@@ -22,7 +22,7 @@ namespace HospedagemCsharp.Models
         public void CadastrarHospedes (List<Pessoa> hospedes)
         {
             // Verificar se a capacidade é maior ou igual ao número de hóspeedes sendo recebido
-            if (Suite.Capacidade >= hospedes.Capacity)
+            if (Suite.Capacidade > hospedes.Capacity)
             {
                 Hospedes = hospedes;
             }
